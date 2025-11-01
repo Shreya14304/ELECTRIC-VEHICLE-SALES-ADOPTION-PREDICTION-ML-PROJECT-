@@ -69,10 +69,17 @@ ML MODEL USED
 
 # WORK FLOW DIAGRAM
 flowchart TD
+
 A[Dataset: EV Sales & Adoption Data] --> B[Data Preprocessing & Cleaning]
+
 B --> C[Exploratory Data Analysis]
+
 C --> D[Regression Model - Predict EV Sales]
+
 C --> E[Classification Model - Adoption Level]
+
 D --> F[Visualization of Predictions]
+
 E --> F
+
 F --> G[Insights & Future Forecasts]
