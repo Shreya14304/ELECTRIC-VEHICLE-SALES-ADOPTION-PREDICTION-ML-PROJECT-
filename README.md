@@ -8,6 +8,14 @@ It combines:
 1. Exploratory Data Analysis (EDA) to visualize EV trends
 2. Regression Models to forecast future EV sales
 3. Classification Models to categorize countries by EV adoption levels
+
+# PROBLEM STATEMENT
+The rapid expansion of the Electric Vehicle (EV) market has made it essential to analyze sales data and forecast future adoption rates.
+However, identifying which factors drive adoption and predicting sales trends across regions remain challenging.
+This project aims to:
+  Analyze EV sales and adoption trends globally.
+  Predict future EV sales using ML regression models.
+  Classify countries into adoption categories (high, medium, low).
  
 # Objectives
 Study the global growth of EVs using historical data
@@ -17,69 +25,18 @@ Study the global growth of EVs using historical data
 
 # Dataset
 Source:https://www.kaggle.com/datasets/rameezmeerasahib/electric-vehicle-ev-sales-and-adoption/data 
+The dataset contains information about:
+    EV sales by country and year
+    Adoption rates
+    Charging infrastructure
+    Population and income statistics
+# Technologies Used
+1. Python (NumPy, Pandas, Scikit-learn, Matplotlib, Seaborn)
+2. Jupyter Notebook / Google Colab
+3. Machine Learning Algorithms (Regression & Classification)
+4. Data Visualization tools
 
-KEY COLUMNS 
-| Column            | Description                         |
-| ----------------- | ----------------------------------- |
-| Year              | Year of record                      |
-| Country           | Name of country                     |
-| EV_Sales          | Number of EVs sold                  |
-| Market_Share      | EV share of total vehicles          |
-| Charging_Stations | Available EV charging points        |
-| GDP               | Economic indicator (per capita GDP) |
-| Vehicle_Type      | BEV/PHEV/Hybrid                     |
-| Population        | Population of region                |
+# Contributors
 
-TECH STACK 
-| Category         | Tools/Libraries                 |
-| ---------------- | ------------------------------- |
-| Language         | Python                          |
-| IDE              | Jupyter Notebook / Google Colab |
-| Data Analysis    | pandas, numpy                   |
-| Visualization    | matplotlib, seaborn, plotly     |
-| Machine Learning | scikit-learn, xgboost           |
-| Version Control  | Git & GitHub                    |
-
-ML MODEL USED 
-| Task                | Model Type     | Algorithms                                        |
-| ------------------- | -------------- | ------------------------------------------------- |
-| EV Sales Prediction | Regression     | Linear Regression, Random Forest, XGBoost         |
-| EV Adoption Level   | Classification | Logistic Regression, Decision Tree, Random Forest |
-
-# Results & Insights
- 1. EV Sales Trend
-    EV sales increased exponentially between 2015–2023
-    Top growth countries: China, Norway, USA, Germany
-
- 2. EV Sales Prediction
-    Forecasted EV sales for 2025 show ~40% increase globally
-    Random Forest Regressor performed best (R² = 0.91)
-
- 3. Adoption Classification
-    Countries categorized as:
-      High Adoption: Norway, China, Netherlands
-      Medium Adoption: USA, UK, Germany
-      Low Adoption: India, Brazil, South Africa
-
- 4. Key Factors
-    EV sales strongly correlated with:
-    GDP per capita
-    Number of charging stations
-    Market share percentage
-
-# WORK FLOW DIAGRAM
-flowchart TD
-
-A[Dataset: EV Sales & Adoption Data] --> B[Data Preprocessing & Cleaning]
-
-B --> C[Exploratory Data Analysis]
-
-C --> D[Regression Model - Predict EV Sales]
-
-C --> E[Classification Model - Adoption Level]
-
-D --> F[Visualization of Predictions]
-
-E --> F
-
-F --> G[Insights & Future Forecasts]
+Shreya Mehndiratta
+SRM Institute of Science and Technology, Ghaziabad
